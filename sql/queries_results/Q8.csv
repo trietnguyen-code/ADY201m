@@ -1,0 +1,8 @@
+day_name,day_index,recorded_days,mean_readiness,mean_steps,mean_active_min,mean_training_load,mean_sleep_hours
+Sunday,0,243,4.8,11112.0,47.6,156.1,6.9
+Monday,1,243,5.15,12094.0,47.7,138.6,6.96
+Tuesday,2,240,4.96,12208.0,48.8,154.7,6.88
+Wednesday,3,238,4.93,11842.0,44.8,119.2,6.82
+Thursday,4,230,5.04,12922.0,51.8,139.7,7.05
+Friday,5,241,4.95,12092.0,46.6,102.2,6.84
+Saturday,6,233,4.77,12404.0,50.6,139.1,7.2

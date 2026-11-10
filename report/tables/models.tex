@@ -1,0 +1,18 @@
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrr}
+\toprule
+Model & MAE $\downarrow$ & RMSE $\downarrow$ & $R^2$ $\uparrow$ & \shortstack{MAE seed\\SD $\downarrow$} & \shortstack{Fit (s)\\$\downarrow$}\\
+\midrule
+Persistence & 1.082 & 1.578 & 0.092 & 0.00000 & 0.000\\
+Ridge & 1.056 & 1.351 & 0.334 & 0.00000 & 0.003\\
+Elastic Net & 1.049 & 1.345 & 0.340 & 0.00000 & 0.003\\
+k-NN & 1.073 & 1.405 & 0.280 & 0.00000 & 0.002\\
+Decision Tree & 1.215 & 1.554 & 0.120 & 0.00003 & 0.006\\
+Random Forest & 1.018 & 1.319 & 0.366 & 0.00315 & 0.774\\
+Extra Trees & \textbf{0.982} & \textbf{1.283} & \textbf{0.400} & 0.00164 & 0.586\\
+HistGB & 1.139 & 1.462 & 0.221 & 0.00000 & 2.892\\
+LightGBM & 1.114 & 1.427 & 0.258 & 0.00805 & 1.326\\
+XGBoost & 1.071 & 1.383 & 0.302 & 0.00765 & 2.087\\
+Small MLP & 1.221 & 1.848 & -0.247 & 0.02220 & 0.651\\
+\bottomrule
+\end{tabular*}\endgroup

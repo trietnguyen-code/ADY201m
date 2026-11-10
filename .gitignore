@@ -1,0 +1,31 @@
+# Data
+data/
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Word temporary files
+~$*.docx
+.~lock.*
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Conference submission source (excluded from course repository)
+iciit paper/
+iciit paper

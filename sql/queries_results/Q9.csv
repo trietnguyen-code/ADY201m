@@ -1,0 +1,5 @@
+continuity_type,total_transitions,valid_paired_surveys,valid_pairing_rate_pct
+1. Consecutive (t -> t+1),2138,1385.0,64.8
+2. 1-day missed (gap=2),9,4.0,44.4
+3. Weekly gap (3-7 days),11,3.0,27.3
+4. Long absence (> 7 days),4,0.0,0.0
