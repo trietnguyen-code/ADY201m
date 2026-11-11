@@ -5,7 +5,7 @@ rhr,sedentary,sedentary,load_28d,ready_dev
 load,load,load,load,load_28d
 sedentary,rhr_dev,load_28d,steps,rhr
 load_28d,rhr,rhr,ready_dev,sedentary
-rhr_dev,steps,steps,soreness,steps
-steps,sleep_7d,ready_dev,sleep_7d,very_active
+rhr_dev,sleep_7d,steps,soreness,steps
+steps,steps,ready_dev,sleep_7d,very_active
 ready_dev,load_28d,dow,sedentary,steps_dev
 sleep_7d,ready_dev,sleep_min,sleep_min,rhr_dev
