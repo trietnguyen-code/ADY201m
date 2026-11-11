@@ -696,14 +696,16 @@ Model & MAE $\downarrow$ & RMSE $\downarrow$ & $R^2$ $\uparrow$ & \shortstack{MA
     (target/"models.tex").write_text(table,encoding="utf-8")
     df=pd.read_csv(data/"table_rq3_methods.csv",index_col=0)
     rows=[]
-    for name in ["Gain","KernelSHAP","LIME","Permutation","TreeSHAP","Random"]:
+    method_keys = ["Tree Gain" if "Tree Gain" in df.index else "Gain", "KernelSHAP", "LIME", "Permutation", "TreeSHAP", "Random"]
+    for name in method_keys:
         values=[]
         for column,direction in [("MAE_after_top5","max"),("deletion_area","max"),("rank_stability","max"),("seconds","min")]:
             value=df.loc[name,column]
             optimum=getattr(df[column],direction)()
             is_key_opt = (column in ["MAE_after_top5", "deletion_area"]) and not pd.isna(value) and np.isclose(value,optimum,rtol=0,atol=1e-12)
             values.append(number(value,3,is_key_opt))
-        rows.append(name+" & "+" & ".join(values)+r"\\")
+        display_name = "Gain" if name in ["Gain", "Tree Gain"] else name
+        rows.append(display_name+" & "+" & ".join(values)+r"\\")
     table=r'''\begingroup\small\setlength{\tabcolsep}{3pt}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrr}
 \toprule

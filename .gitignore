@@ -29,3 +29,6 @@ __pycache__/
 # Conference submission source (excluded from course repository)
 iciit paper/
 iciit paper
+
+# Temporary inline plots
+report/*.png

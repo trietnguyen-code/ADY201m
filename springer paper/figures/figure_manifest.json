@@ -4,7 +4,7 @@
     "fig_pipeline.pdf",
     "fig_shap.pdf"
   ],
-  "data_directory": "C:\\Users\\NGUYEN MINH TRIET\\Desktop\\PMData_ReadinessForecast\\report",
+  "data_directory": "report",
   "model_training_performed": false,
   "unavailable_raw_predictions_inferred": false
 }
