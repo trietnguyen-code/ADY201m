@@ -190,11 +190,11 @@ Evaluating ten supervised machine learning algorithms across six distinct model 
 ---
 
 ### 2. XAI Faithfulness Benchmark (Progressive Feature Deletion)
-Evaluating five post-hoc explainers on gradient-boosted trees (LightGBM) by sequentially neutralizing the top $k \in \{1, \dots, 20\}$ features with training-set medians without model retraining:
+Evaluating five post-hoc explainers on Extra Trees by sequentially neutralizing the top $k \in \{1, \dots, 20\}$ features with training-set medians without model retraining:
 
 | Explainer Framework | MAE after Top-5 $\uparrow$ | Deletion Area $\uparrow$ | Rank Stability (Spearman) $\uparrow$ | Runtime (s) $\downarrow$ |
 | :--- | :---: | :---: | :---: | :---: |
-| *Full Model (No Deletion)* | *1.114* | *n/a* | *n/a* | *n/a* |
+| *Full Model (No Deletion)* | *0.982* | *n/a* | *n/a* | *n/a* |
 | **Tree Gain** | 1.310 | 1.285 | **0.880** | **0.002** |
 | **KernelSHAP** (50 background) | 1.353 | 1.313 | 0.736 | 8.624 |
 | **LIME** (1,000 perturbations) | **1.355** | 1.310 | 0.809 | 0.744 |
